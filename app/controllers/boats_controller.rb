@@ -4,7 +4,7 @@ class BoatsController < ApplicationController
   end
 
   def show
-    @boat = Boats.new
+    @boats = Boat.new
   end
 
   private
