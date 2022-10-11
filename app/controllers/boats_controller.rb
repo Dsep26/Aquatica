@@ -7,6 +7,8 @@ class BoatsController < ApplicationController
     @boat = Boats.new
   end
 
+  private
+  
   def boat_params
     params.require(:boat).permit(:name, :price, :type)
   end
