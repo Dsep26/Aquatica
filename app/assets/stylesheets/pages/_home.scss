@@ -9,7 +9,10 @@
     height: 1500px;
     background-repeat: no-repeat;
     background-size: cover;
-   
-    
+      
 }
 
+.carousel-item{
+    height: 500px;
+    object-fit: cover;   
+}
