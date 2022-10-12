@@ -1,3 +1,7 @@
+<div class="card-categories">
+<ul>
 <% @boat.photos.each do |photo| %>
-  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+  <li class="card"><%= cl_image_tag("https://res.cloudinary.com/dufzz9mkx/image/upload/v1665560280/img-background-home-06_aczzmr.jpg", height: 300, width: 400, crop: :fill) %></li>
 <% end %>
+</ul>
+</div>
