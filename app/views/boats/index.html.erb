@@ -7,7 +7,7 @@
             <h4 class="card-title"><%= boat.name  %></h4>
             <p class="card-text"><%= boat.price  %></p>
             <p class="card-text"><%= boat.category  %></p>
-            <a href="#" class="btn btn-primary">More</a>
+            <%= link_to "More", boat_path(boat), class: "btn btn-primary" %>
           </div>
         </div>
         <br>
