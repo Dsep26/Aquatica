@@ -1,6 +1,15 @@
 // Specific CSS for your home-page
 .title{
-    background-color: aqua;
+    background-color: rgb(13, 137, 194);
     text-align: center;
+}
+.background{
+    position: relative;
+    background-image: url("sailboat-yacht-shelter-sea.jpg");
+    height: 1500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
 }
 
