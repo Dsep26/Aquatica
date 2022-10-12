@@ -1,4 +1,14 @@
-<h1><%= @boat["name"] %></h1>
-<h3><%= @boat["price"] %> <%= @boat["category"] %> </h3>
-
-<p><%= link_to "Back", boats_path, class: "btn btn-secondary" %></p>
+<div class="container">
+  <div class="card-trip">
+    <%= cl_image_tag @boat.photo.key, width: 600, height: 450, crop: :fill, class: "img-big" %>
+    <div class="card-trip-infos">
+      <div>
+        <h2><%= @boat["name"] %></h2>
+        <p><%= @boat["category"] %></p>
+      </div>
+      <a href="#" class = "btn btn-primary btn-middle">Book Now !</a>
+      <p><%= link_to "Back", boats_path, class: "btn btn-danger btn-top-right" %></p>
+      <h2 class="card-trip-pricing">Rs <%= @boat["price"] %></h2>
+    </div>
+  </div>
+</div>
