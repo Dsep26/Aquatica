@@ -7,7 +7,7 @@ class BoatsController < ApplicationController
 
   def show
   end
-  
+
   def new
     @boats = Boat.new(boat_params)
   end
