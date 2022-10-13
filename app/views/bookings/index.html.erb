@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>My Bookings</h1>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Starts-At</th>
+        <th scope="col">Ends-At</th>
+        <th scope="col">Price</th>
+        <th colspan="2" scope="col">Actions</th>
+      </tr>
+    </thead>
+      <tbody>
+        <% column = 0 %>
+        <% @bookings.each do |booking| %>
+          <% column += 1 %>
+          <tr>
+            <th scope="row"><%= column %></th>
+            <td><%= booking.start_date %></td>
+            <td><%= booking.end_date %></td>
+            <td><%= booking.boat.price %></td>
+            <td><%= link_to "Edit", edit_booking_path(booking) %></td>
+            <td><%= link_to "Delete", booking_path(booking), class: "material-symbols-outlined", data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove this booking"} %></td>
+          </tr>
+        <% end %>
+      </tbody>
+  </table>
+</div>
