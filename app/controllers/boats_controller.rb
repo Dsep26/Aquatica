@@ -2,7 +2,13 @@ class BoatsController < ApplicationController
   before_action :set_boat, only: [:show, :photo]
 
   def index
+    if params[:query].present?
+      sql_query = "name ILIKE :query OR category ILIKE :query"
+      @boats = Boat.where(sql_query, query: "%#{params[:query]}%")
+    else
       @boats = Boat.all
+    end
+      
   end
 
   def show
