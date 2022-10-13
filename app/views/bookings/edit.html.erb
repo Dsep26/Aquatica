@@ -1,7 +1,7 @@
 <h1>Rent Your Boat</h1>
-<h3>Making a booking for <%= @boat.name %> </h3>
+<h3>Modifying a booking for <%= @booking.boat.name %> </h3>
 
-<%= simple_form_for ([@boat, @booking]) do |f| %>
+<%= simple_form_for (@booking) do |f| %>
   <%= f.input :start_date, as: :date, html5: true%>
   <%= f.input :end_date, as: :date, html5: true%>
   <%= f.submit class: 'btn btn-primary' %>

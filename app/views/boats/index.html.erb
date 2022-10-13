@@ -6,7 +6,7 @@
         <%= cl_image_tag boat.photo.key, width: 400, height: 300, crop: :fill, class: "img-cards" %>
         <div class="card-body">
           <h4 class="card-title"><%= boat.name  %></h4>
-          <p class="card-text"><%= boat.price  %></p>
+          <p class="card-text">Rs <%= boat.price  %></p>
           <p class="card-text"><%= boat.category  %></p>
           <%= link_to "More", boat_path(boat), class: "btn btn-primary" %>
         </div>
