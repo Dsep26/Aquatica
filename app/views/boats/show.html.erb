@@ -6,9 +6,9 @@
         <h2><%= @boat["name"] %></h2>
         <p><%= @boat["category"] %></p>
       </div>
-      <a href="#" class = "btn btn-primary btn-middle">Book Now !</a>
+      
       <p><%= link_to "Back", boats_path, class: "btn btn-danger btn-top-right" %></p>
-      <p><%= link_to "Book Now", new_boat_booking_path(@boat), class: "btn btn-secondary" %></p>
+      <p><%= link_to "Book Now", new_boat_booking_path(@boat), class: "btn btn-primary btn-middle" %></p>
       <h2 class="card-trip-pricing">Rs <%= @boat["price"] %></h2>
     </div>
   </div>
