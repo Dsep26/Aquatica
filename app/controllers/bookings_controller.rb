@@ -1,12 +1,14 @@
-class BookingController < ApplicationController
+class BookingsController < ApplicationController
+  before_action :set_booking, only: [:new, :create]
   before_action :set_booking, only: [:edit, :update, :destroy]
-  before_action :set_boat, only: [:new, :create]
+
 
   # def index
   #   @bookings = Booking.all
   # end
 
   def new
+    set_boat
     @booking = Booking.new
   end
 

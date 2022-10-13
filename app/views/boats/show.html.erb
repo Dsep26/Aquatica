@@ -2,3 +2,4 @@
 <h3><%= @boat["price"] %> <%= @boat["category"] %> </h3>
 
 <p><%= link_to "Back", boats_path, class: "btn btn-secondary" %></p>
+<p><%= link_to "Book Now", new_boat_booking_path(@boat), class: "btn btn-secondary" %></p>
