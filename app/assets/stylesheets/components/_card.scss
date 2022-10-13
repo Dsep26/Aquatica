@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   flex-grow: 1;
-  gap: 10px;
+  gap: 20px;
 }
 
 .card-grid {
@@ -13,6 +13,7 @@
   width: 403px;
   height: 303px;
 }
+
 
 .card-trip {
   overflow: hidden;
