@@ -1,11 +1,14 @@
 // Specific CSS for your home-page
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Roboto&family=Splash&family=Titan+One&display=swap');
 .title{
-    background-color: rgb(99, 187, 228);
+    background-color: rgba(119, 197, 233, 0.486);
     text-align: center;
 }
 .background{
     position: relative;
-    background-image: url("sailing-boat-1593613 (1).jpg");
+    // background-image: url("sailing-boat-1593613 (1).jpg");
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(226,209,173,1) 100%);
     height: 1500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,6 +16,61 @@
 }
 
 .carousel-item{
+    width: 800px;
     height: 500px;
-    object-fit: cover;   
+
+    
+    img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    height: 100%;
+    }
+}
+
+.carousel-inner{
+    // margin-right: 10%;
+    // margin-left: 10%;
+}
+h1 {
+    font-family: 'Titan One', cursive;
+    font-weight: bolder;
+}
+.carousel{
+    padding-top: 20px;
+    
+}
+
+
+.img-class-carousel {
+
+    // width: 100%;
+    // object-fit: contain;
+    // border-radius: 5px;
+    // height: 500px;
+    
+}
+.search{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+}
+.search-field{
+    width: 750px;
+}
+
+footer{
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100px;
+        background:#ccc;
+}
+
+.flex-display{
+    display: flex;
+    justify-content: center;
 }
