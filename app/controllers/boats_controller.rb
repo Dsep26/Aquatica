@@ -2,7 +2,7 @@ class BoatsController < ApplicationController
   before_action :set_boat, only: [:show, :photo]
 
   def index
-    @boats = Boat.all
+      @boats = Boat.all
   end
 
   def show
