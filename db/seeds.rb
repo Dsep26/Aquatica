@@ -69,22 +69,22 @@ boat.photo.attach(io: file, filename: "img-background-home-06_aczzmr", content_t
 boat.save
 
 file = URI.open("https://res.cloudinary.com/dufzz9mkx/image/upload/v1665690309/sailor%20boat/593400_covc7d.jpg")
-boat = Boat.new(name: "The Sunset", category: "Sailor boat", price: 1200)
+boat = Boat.new(name: "The Sailor", category: "Sailor boat", price: 1200)
 boat.photo.attach(io: file, filename: "img-background-home-06_aczzmr", content_type: "image/jpg")
 boat.save
 
 file = URI.open("https://res.cloudinary.com/dufzz9mkx/image/upload/v1665690305/sailor%20boat/sailing-boat-2K-wallpaper_ljxmde.jpg")
-boat = Boat.new(name: "Heaven", category: "Sailor boat", price: 1200)
+boat = Boat.new(name: "Oceana", category: "Sailor boat", price: 1200)
 boat.photo.attach(io: file, filename: "img-background-home-06_aczzmr", content_type: "image/jpg")
 boat.save
 
 file = URI.open("https://res.cloudinary.com/dufzz9mkx/image/upload/v1665690303/sailor%20boat/2799608007403d15a9f06c45b48bf337--boats-for-sale-k_tf0pfe.jpg")
-boat = Boat.new(name: "Hover", category: "Sailor boat", price: 1200)
+boat = Boat.new(name: "Heaven", category: "Sailor boat", price: 1200)
 boat.photo.attach(io: file, filename: "img-background-home-06_aczzmr", content_type: "image/jpg")
 boat.save
 
 file = URI.open("https://res.cloudinary.com/dufzz9mkx/image/upload/v1665690303/sailor%20boat/v46-21-800x486_xy3l5n.jpg")
-boat = Boat.new(name: "The Wave", category: "Sailor boat", price: 1200)
+boat = Boat.new(name: "The Flow", category: "Sailor boat", price: 1200)
 boat.photo.attach(io: file, filename: "img-background-home-06_aczzmr", content_type: "image/jpg")
 boat.save
 
@@ -94,8 +94,7 @@ boat.photo.attach(io: file, filename: "img-background-home-06_aczzmr", content_t
 boat.save
 
 file = URI.open("https://res.cloudinary.com/dufzz9mkx/image/upload/v1665690303/sailor%20boat/yacht-sea-sailing-ship-wallpaper-preview_pyuwey.jpg")
-boat = Boat.new(name: "The Lady", category: "Sailor boat", price: 1200)
+boat = Boat.new(name: "Lady Windy", category: "Sailor boat", price: 1200)
 boat.photo.attach(io: file, filename: "img-background-home-06_aczzmr", content_type: "image/jpg")
 boat.save
-
 puts "rails db:seed - done."
