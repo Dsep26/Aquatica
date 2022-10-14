@@ -4,7 +4,7 @@
     <div class = "form-container">
       <div class="form-info">
         <h4><u>Making a booking for <strong><%= @boat.name %></strong>(<%= @boat.category %>)</u></h4>
-        <%= cl_image_tag @boat.photo.key, width: 480, height: 300, crop: :fill, class: "img-booking" %>
+        <%= cl_image_tag @boat.photo.key, crop: :fill, class: "img-booking" %>
         <h5 id = "price-bottom-right"> Rs<%= @boat.price %>/Day</h5>
       </div>
       <div class="form-action">

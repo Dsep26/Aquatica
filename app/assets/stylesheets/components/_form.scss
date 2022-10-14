@@ -1,3 +1,6 @@
+$img_width: 490px;
+$img_height: 300px;
+
 .form {
   display: flex;
   align-items: center;
@@ -11,14 +14,23 @@
       margin: 0 auto;
 
       #price-bottom-right {
-        text-align: right;
+        text-align: center;
       }
 
       .form-info {
         margin-left: 15px;
 
         .img-booking {
+          width:$img_width;
+          height: $img_height;
+        }
 
+        .img-booking:hover {
+          // width: calc($img_width + 3px);
+          // height: calc($img_height + 3px);
+          width: 495px;
+          height:302px;
+          transition: 0.3s;
         }
       }
 
@@ -27,8 +39,16 @@
           font-weight: bold;
           text-transform: capitalize;
         }
+
+        input {
+          width: 100%;
+        }
+
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        padding-right: 0;
       }
     }
 

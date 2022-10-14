@@ -13,18 +13,16 @@
       </tr>
     </thead>
       <tbody class = "link">
-        <% column = 0 %>
         <% total = 0 %>
-        <% @bookings.each do |booking| %>
-          <% column += 1 %>
+        <% @bookings.each_with_index do |booking, index| %>
           <tr>
-            <th scope="row"><%= column %></th>
+            <th scope="row"><%= index %></th>
             <td><%= booking.start_date %></td>
             <td><%= booking.end_date %></td>
-            <% day = (booking.end_date - booking.start_date).to_i %>
-            <td><%= day %></td>
+            <%# <% day = (booking.end_date - booking.start_date).to_i %>
+            <td><%= booking.days_between %></td>
             <td><%= booking.boat.price %></td>
-            <% cost = day * booking.boat.price %>
+            <% cost = booking.days_between * booking.boat.price %>
             <% total += cost %>
             <td><%= cost %></td>
             <td><%= link_to "Edit", edit_booking_path(booking), class:"link" %></td>
