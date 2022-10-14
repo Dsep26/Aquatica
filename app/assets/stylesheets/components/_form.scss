@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  align-items: center;
+
+  .form-container {
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      display: flex;
+      width:70%;
+      margin: 0 auto;
+
+      #price-bottom-right {
+        text-align: right;
+      }
+
+      .form-info {
+        margin-left: 15px;
+
+        .img-booking {
+
+        }
+      }
+
+      .form-action {
+        label {
+          font-weight: bold;
+          text-transform: capitalize;
+        }
+        display: flex;
+        align-items: center;
+      }
+    }
+
+}
