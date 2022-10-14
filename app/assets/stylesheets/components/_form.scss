@@ -1,0 +1,55 @@
+$img_width: 490px;
+$img_height: 300px;
+
+.form {
+  display: flex;
+  align-items: center;
+
+  .form-container {
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      display: flex;
+      width:70%;
+      margin: 0 auto;
+
+      #price-bottom-right {
+        text-align: center;
+      }
+
+      .form-info {
+        margin-left: 15px;
+
+        .img-booking {
+          width:$img_width;
+          height: $img_height;
+        }
+
+        .img-booking:hover {
+          // width: calc($img_width + 3px);
+          // height: calc($img_height + 3px);
+          width: 495px;
+          height:302px;
+          transition: 0.3s;
+        }
+      }
+
+      .form-action {
+        label {
+          font-weight: bold;
+          text-transform: capitalize;
+        }
+
+        input {
+          width: 100%;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        padding-right: 0;
+      }
+    }
+
+}

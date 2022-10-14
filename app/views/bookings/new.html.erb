@@ -1,8 +1,19 @@
-<h1>Rent Your Boat</h1>
-<h3>Making a booking for <%= @boat.name %> </h3>
-
-<%= simple_form_for ([@boat, @booking]) do |f| %>
-  <%= f.input :start_date, as: :date, html5: true%>
-  <%= f.input :end_date, as: :date, html5: true%>
-  <%= f.submit class: 'btn btn-primary' %>
-<% end %>
+<div class="container">
+  <h1>Rent Your Boat</h1>
+  <div class="form">
+    <div class = "form-container">
+      <div class="form-info">
+        <h4><u>Making a booking for <strong><%= @boat.name %></strong>(<%= @boat.category %>)</u></h4>
+        <%= cl_image_tag @boat.photo.key, crop: :fill, class: "img-booking" %>
+        <h5 id = "price-bottom-right"> Rs<%= @boat.price %>/Day</h5>
+      </div>
+      <div class="form-action">
+        <%= simple_form_for ([@boat, @booking]) do |f| %>
+          <%= f.input :start_date, as: :date, html5: true%>
+          <%= f.input :end_date, as: :date, html5: true%>
+          <%= f.submit class: 'btn btn-primary btn-lg float-end' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
