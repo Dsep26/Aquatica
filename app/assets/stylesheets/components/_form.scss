@@ -4,6 +4,7 @@ $img_height: 300px;
 .form {
   display: flex;
   align-items: center;
+  padding: 69px 0px;
 
   .form-container {
       overflow: hidden;
@@ -12,9 +13,14 @@ $img_height: 300px;
       display: flex;
       width:70%;
       margin: 0 auto;
+      padding-top: 10px;
+       u{
+        padding: 4px 3px;
+       }
 
       #price-bottom-right {
         text-align: center;
+        padding: 10px;
       }
 
       .form-info {

@@ -1,15 +1,17 @@
-<div class="container">
-  <div class="card-trip">
-    <%= cl_image_tag @boat.photo.key, width: 600, height: 450, crop: :fill, class: "img-big" %>
-    <div class="card-trip-infos">
-      <div>
-        <h2><%= @boat["name"] %></h2>
-        <p><%= @boat["category"] %></p>
-      </div>
+<div class="background">
+  <div class="container">
+    <div class="card-trip">
+      <%= cl_image_tag @boat.photo.key, width: 600, height: 450, crop: :fill, class: "img-big" %>
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= @boat["name"] %></h2>
+          <p><%= @boat["category"] %></p>
+        </div>
 
-      <p><%= link_to "Back", boats_path, class: "btn btn-danger btn-top-right" %></p>
-      <p><%= link_to "Book Now", new_boat_booking_path(@boat), class: "btn btn-primary btn-middle" %></p>
-      <h2 class="card-trip-pricing">Rs <%= @boat["price"] %></h2>
+        <p><%= link_to "Back", boats_path, class: "btn btn-danger btn-top-right" %></p>
+        <p><%= link_to "Book Now", new_boat_booking_path(@boat), class: "btn btn-primary btn-middle" %></p>
+        <h2 class="card-trip-pricing">Rs <%= @boat["price"] %></h2>
+      </div>
     </div>
   </div>
 </div>
