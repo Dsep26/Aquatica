@@ -1,7 +1,7 @@
 
 <div class="background">
   <div class="title">
-    <h1>AQUATICA</h1>
+    <h1>AQUATICA <%= image_tag "ship.png", class:"boat" %></h1>
     <p>Rent your boat for a new adventure</p>
   </div>
   <div class="search">
@@ -9,7 +9,7 @@
       <%= text_field_tag :query,
       params[:query],
       class: "form-control",
-      placeholder: "Find a Boats"
+      placeholder: "Find Boats (Name or Categories)"
       %>
         <%= submit_tag "Search", class: "btn btn-primary" %>
     <% end %>
@@ -42,40 +42,64 @@
       </button>
     </div>
   </div>
-  <div>
-    <h2>Find your dream adventure with us, go for the offshore exploring</h2>
-    <p>  </p>
-    <div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
+  <h2>Find your dream adventure with us, go for the offshore exploring</h2>
+  <div class="home-card-container">
 
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class="card-home mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <%= image_tag "sailboat-yacht-shelter-sea.jpg", class:"img-fluid rounded-start" %>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Categories</h5>
+              <p class="card-text">Choice your boat.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="..." class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class="card-home mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <%= image_tag "view-from.jpg", class:"img-fluid rounded-start" %>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Discover</h5>
+            <p class="card-text">Adventure, Discovery of new islands.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
+    <div class="card-home mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <%= image_tag "ile aux cerf.png", class:"img-fluid rounded-start" %>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Ile Aux Cerf</h5>
+              <p class="card-text">Visit our most popular touristic island.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="card-home mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <%= image_tag "fishing.jpg.webp", class:"img-fluid rounded-start" %>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Big Game Fishing</h5>
+              <p class="card-text">Go for the Big one.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 

@@ -64,3 +64,26 @@
   right: 45%;
   bottom:15px;
 }
+
+.card-home{
+   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(148,187,233,1) 55%);
+   border-radius: 8px;
+   box-shadow: 0px 0px 8px black;
+   padding: .75rem;
+   margin: 20px;
+    img{
+      padding-right: 10px;
+      object-fit: cover;
+      height: 170px;
+    }
+    .card-title{
+      font-weight: bold;
+      padding: 24px;
+      font-size: 24px;
+    }
+    .card-text{
+      padding: 23px 70px;
+      font-size: 18px;
+      
+    }
+}
