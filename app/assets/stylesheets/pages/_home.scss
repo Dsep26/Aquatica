@@ -1,4 +1,8 @@
 // Specific CSS for your home-page
+
+.all-pages-content {
+  min-height : calc(100vh - 100px)
+}
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Roboto&family=Splash&family=Titan+One&display=swap');
 .title{
     background-color: rgba(119, 197, 233, 0.486);
@@ -12,14 +16,14 @@
     height: 1500px;
     background-repeat: no-repeat;
     background-size: cover;
-      
+
 }
 
 .carousel-item{
     width: 800px;
     height: 500px;
 
-    
+
     img{
     width: 100%;
     object-fit: cover;
@@ -38,7 +42,7 @@ h1 {
 }
 .carousel{
     padding-top: 20px;
-    
+
 }
 
 
@@ -48,26 +52,16 @@ h1 {
     // object-fit: contain;
     // border-radius: 5px;
     // height: 500px;
-    
+
 }
 .search{
     width: 100%;
-    
+
     display: flex;
     justify-content: center;
 }
 .search-field{
     width: 750px;
-}
-
-footer{
-
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height:100px;
-        background:#ccc;
 }
 
 .flex-display{
